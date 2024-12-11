@@ -17,6 +17,7 @@ interface Product {
   discount?: string;
   isNew?: boolean;
   imageSrc: StaticImageData;
+  link:string;
 }
 
 const products: Product[] = [
@@ -28,6 +29,7 @@ const products: Product[] = [
     originalPrice: 3500,
     discount: '-30%',
     imageSrc: img1,
+    link: 'singlepage/syltherine',
   },
   {
     id: 2,
@@ -35,6 +37,7 @@ const products: Product[] = [
     description: 'Stylish cafe chair',
     price: 2500,
     imageSrc: img2,
+    link: 'singlepage/leviosa',
   },
   {
     id: 3,
@@ -44,6 +47,7 @@ const products: Product[] = [
     originalPrice: 14000,
     discount: '-50%',
     imageSrc: img3,
+    link: 'singlepage/lolito',
   },
   {
     id: 4,
@@ -52,6 +56,7 @@ const products: Product[] = [
     price: 500,
     isNew: true,
     imageSrc: img4,
+    link: 'singlepage/respira',
   },
 ];
 
@@ -63,9 +68,10 @@ const ProductCard: React.FC<Product> = ({
   discount,
   isNew,
   imageSrc,
+  link,
 }) => (
-  <div className="border rounded-lg w-full sm:w-[20%] md:w-1/3 lg:w-1/4 p-4 shadow-lg">
-    <Link href="/singlepage">
+  <div className="border rounded-lg w-full sm:w-[20%] md:w-1/3 lg:w-[300px] p-4 shadow-lg">
+    <Link href={link}>
       <div className="relative">
         <Image src={imageSrc} alt={name} className="w-full h-52 object-cover rounded-t-lg" />
         {discount && (
