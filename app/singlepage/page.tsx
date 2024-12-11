@@ -6,11 +6,6 @@ import ProductDetails from './details';
 import ProductDescription from './describtion';
 import ProductCard from '@/components/products';
 
-
-
-
-
-
 const page = () => {
   return (
     <div>

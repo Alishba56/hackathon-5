@@ -1,10 +1,12 @@
+
+
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
 import img1 from "@/images/Images (1).png"
 import img3 from '@/images/Images (3).png'
 import img2 from "@/images/Images (8).png"
-
 import img4 from "@/images/Images (2).png"
+import Link from 'next/link';
 
 interface Product {
   id: number;
@@ -51,7 +53,6 @@ const products: Product[] = [
     isNew: true,
     imageSrc: img4,
   },
-  // Add more products as needed
 ];
 
 const ProductCard: React.FC<Product> = ({
@@ -63,66 +64,59 @@ const ProductCard: React.FC<Product> = ({
   isNew,
   imageSrc,
 }) => (
-  <div className="border rounded-lg  w-[17%] mt-6 h-full shadow-lg">
-    <div className="relative ">
-      <Image
-       src={imageSrc}
-        alt={name}
-         className="w-[100%] h-52 object-cover" />
-      {discount && (
-        <span className="absolute top-0 right-5 mt-6 rounded-full bg-red-500 text-white  py-2 px-1 font-bold">
-          {discount}
-        </span>
-      )}
-      {isNew && (
-        <span className="absolute top-0 right-5 mt-6 rounded-full bg-green-500 text-white py-2 px-1 font-bold">
-          New
-        </span>
-      )}
-    </div>
-    <div className="p-4">
-      <h3 className="text-lg font-semibold">{name}</h3>
-      <p className="text-gray-500">{description}</p>
-      <div className="mt-2">
-        <span className="text-xl font-bold">${price.toLocaleString()}</span>
-        {originalPrice && (
-          <span className="text-gray-500 line-through ml-2">
-            ${originalPrice.toLocaleString()}
+  <div className="border rounded-lg w-full sm:w-[20%] md:w-1/3 lg:w-1/4 p-4 shadow-lg">
+    <Link href="/singlepage">
+      <div className="relative">
+        <Image src={imageSrc} alt={name} className="w-full h-52 object-cover rounded-t-lg" />
+        {discount && (
+          <span className="absolute top-2 right-2 rounded-full bg-red-500 text-white py-1 px-2 text-xs font-bold">
+            {discount}
+          </span>
+        )}
+        {isNew && (
+          <span className="absolute top-2 left-2 rounded-full bg-green-500 text-white py-1 px-2 text-xs font-bold">
+            New
           </span>
         )}
       </div>
-    </div>
+      <div className="p-4">
+        <h3 className="text-lg font-semibold">{name}</h3>
+        <p className="text-gray-500">{description}</p>
+        <div className="mt-2 flex items-center gap-2">
+          <span className="text-xl font-bold">${price.toLocaleString()}</span>
+          {originalPrice && (
+            <span className="text-gray-500 line-through">
+              ${originalPrice.toLocaleString()}
+            </span>
+          )}
+        </div>
+      </div>
+    </Link>
   </div>
 );
 
 const ProductList: React.FC = () => (
   <div className=" mx-auto p-4">
-    <div className="flex justify-center  flex-wrap gap-16">
+    <div className="flex flex-wrap justify-center gap-4">
       {products.map((product) => (
         <ProductCard key={product.id} {...product} />
-      ))} 
-      
+      ))}
     </div>
-    <div className="flex justify-center  flex-wrap gap-16">
+    <div className="flex flex-wrap justify-center gap-4">
       {products.map((product) => (
         <ProductCard key={product.id} {...product} />
-      ))} 
-      
+      ))}
     </div>
-    <div className="flex justify-center  flex-wrap gap-16">
+    <div className="flex flex-wrap justify-center gap-4">
       {products.map((product) => (
         <ProductCard key={product.id} {...product} />
-      ))} 
-      
-    </div>
-
-    <div className="flex justify-center  flex-wrap gap-16">
+      ))}
+    </div> <div className="flex flex-wrap justify-center gap-4">
       {products.map((product) => (
         <ProductCard key={product.id} {...product} />
-      ))} 
-      
+      ))}
     </div>
-    <div className="flex justify-center my-10">
+    <div className="flex justify-center mt-10">
       <button className="px-4 py-2 mx-1 bg-gray-200 rounded">1</button>
       <button className="px-4 py-2 mx-1 bg-gray-200 rounded">2</button>
       <button className="px-4 py-2 mx-1 bg-gray-200 rounded">3</button>
@@ -132,4 +126,3 @@ const ProductList: React.FC = () => (
 );
 
 export default ProductList;
-
