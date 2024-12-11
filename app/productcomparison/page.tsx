@@ -6,7 +6,7 @@ import { PiLineVerticalThin } from "react-icons/pi";
 import { SlArrowDown } from "react-icons/sl";
 import img2 from "@/images/Group 95.png";
 import Features from "../shop/banner";
-export const page = () => {
+ const page = () => {
   return (
     <div>
       <div className="w-f h-full">
@@ -153,3 +153,4 @@ export const page = () => {
     </div>
   );
 };
+export default page;
