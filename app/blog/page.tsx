@@ -44,20 +44,14 @@ const Blog = () => {
 
   return (
     <div> 
-        <div className="w-full h-full">
-    <Image
-    className="relative  container"
-    src={tumb}
-    alt="backgroud"
-    />
-  <div className="container mx-auto top-48 absolute">
-  <Image className='ml-[48%] mb-5'
-   src={logo}
-          alt="" />
-    <h1 className="text-4xl font-bold  text-center mb-4">Blog</h1>
-    <p className="text-gray-600 text-center text-2xl">Home &gt; Blog</p>
-  </div> 
-  </div>
+   <div className="relative w-full h-64 md:h-96">
+        <Image className="w-full h-full object-cover" src={tumb} alt="background" />
+        <div className="absolute inset-0 flex flex-col items-center justify-center">
+          <Image className="mb-5" src={logo} alt="logo" width={80} height={80} />
+          <h1 className="text-2xl md:text-4xl font-bold text-center mb-2">Blog</h1>
+          <p className="text-gray-600 text-center text-sm md:text-2xl">Home &gt; Blog</p>
+        </div>
+      </div>
     <div className="">
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
         <div className="lg:col-span-3 px-40 py-10">

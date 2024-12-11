@@ -7,7 +7,7 @@ import img5 from "@/images/Images (1).png"
 import img6 from '@/images/Images (8).png'
 import img7 from "@/images/Images (3).png"
 import img8 from "@/images/Images (2).png"
-import img2 from "@/images/Images (7).png"
+import img2 from "@/images/Images (6).png"
 import { StaticImageData } from 'next/image'
 
 export interface Product {

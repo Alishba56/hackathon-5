@@ -1,21 +1,20 @@
 import React from 'react';
 import Image from 'next/image';
 import img from "@/images/Rectangle 1.png"
+import logo from "@/images/Logos.png";
+
 
 
 const page = () => {
   return (
     <div>
-        <div className="w-full h-full">
-        <Image
-        className="relative  container"
-        src={img}
-        alt="backgroud"
-        />
-      <div className="container mx-auto top-48 absolute">
-        <h1 className="text-4xl font-bold  text-center mb-4">Cart</h1>
-        <p className="text-gray-600 text-center text-2xl">Home &gt; Cart</p>
-      </div> 
+       <div className="relative w-full h-64 md:h-96">
+        <Image className="w-full h-full object-cover" src={img} alt="background" />
+        <div className="absolute inset-0 flex flex-col items-center justify-center">
+          <Image className="mb-5" src={logo} alt="logo" width={80} height={80} />
+          <h1 className="text-2xl md:text-4xl font-bold text-center mb-2">Cart</h1>
+          <p className="text-gray-600 text-center text-sm md:text-2xl">Home &gt; Cart</p>
+        </div>
       </div>
       
     </div>

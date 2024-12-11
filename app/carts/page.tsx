@@ -1,23 +1,24 @@
 
 import Image from 'next/image';
 import React from 'react';
-import img from '@/images/Group 95.png';
+// import img from '@/images/Group 95.png';
 import { AiFillDelete } from "react-icons/ai";
+import { Products } from '@/data/appproducts';
 import Features from '../shop/banner';
 import Page from '../carts/cartspage';
 import Link from 'next/link';
 
 const Cart = () => {
-  const cartItems = [
-    {
-      name: 'Asgaard sofa',
-      price: 250000,
-      quantity: 1,
-      image: img, // Replace with your image path
-    },
-  ];
+  // const cartItems = [
+  //   {
+  //     name: 'Asgaard sofa',
+  //     price: 250000,
+  //     quantity: 1,
+  //     image: img, 
+  //   },
+  // ];
 
-  const total = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
+  const total = Products .reduce((acc, item) => acc + item.price * item.quantity, 0);
 
   return (
     <div className="">
@@ -33,10 +34,10 @@ const Cart = () => {
             <p className="font-semibold hidden md:block"></p>
           </div>
           
-          {cartItems.map((item, index) => (
+          {Products .map((item, index) => (
             <div key={index} className="flex flex-col md:flex-row justify-between items-center mb-4 p-4 bg-white rounded">
               <div className="flex items-center  w-full md:w-auto mb-4 md:mb-0">
-                <Image src={item.image} alt={item.name} className="w-24 h-24 object-cover mr-4" />
+                <Image src={item.imageSrc} alt={item.name} className="w-24 h-24 object-cover mr-4" />
                 <p>{item.name}</p>
               </div>
               <p className="w-full md:w-auto mb-2 md:mb-0">Rs. {item.price.toFixed(2)}</p>

@@ -1,6 +1,8 @@
 import React from "react";
 import img from "@/images/Rectangle 1.png";
 import img3 from "@/images/Group 94.png";
+import logo from "@/images/Logos.png";
+
 import Image from "next/image";
 import { PiLineVerticalThin } from "react-icons/pi";
 import { SlArrowDown } from "react-icons/sl";
@@ -9,16 +11,12 @@ import Features from "../shop/banner";
  const page = () => {
   return (
     <div>
-      <div className="w-f h-full">
-        <Image className="relative container" src={img} alt="backgroud" />
-        <div className="container mx-auto top-48 absolute">
-          <h1 className="text-4xl font-bold text-center mb-4">
-            Product Comparison{" "}
-          </h1>
-          <p className="text-gray-600 text-center text-2xl">
-            {" "}
-            Home &gt; Comparison{" "}
-          </p>
+      <div className="relative w-full h-64 md:h-96">
+        <Image className="w-full h-full object-cover" src={img} alt="background" />
+        <div className="absolute inset-0 flex flex-col items-center justify-center">
+          <Image className="mb-5" src={logo} alt="logo" width={80} height={80} />
+          <h1 className="text-2xl md:text-4xl font-bold text-center mb-2">Contact</h1>
+          <p className="text-gray-600 text-center text-sm md:text-2xl">Home &gt; Contact</p>
         </div>
       </div>
       <div className="w-full h-full flex flex-wrap justify-between mx-8 mt-10">
