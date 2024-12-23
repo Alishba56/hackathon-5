@@ -23,8 +23,10 @@ async function page({
   
       </div>
       <ProductDetails props={product}/>
+     
       <ProductDescription/>
-      <ProductCard/> 
+     <ProductCard/> 
+     
       </div>
     )
   }else{

@@ -1,10 +1,10 @@
-
 import HeroSection from '@/components/heroSection'
-import Products from '@/components/products'
 import BrowseRange from '@/components/range'
 import Second from '@/components/second'
 import React from 'react'
 import ImageGallery from '@/components/imageGallery'
+
+import ProductCard from '@/components/products'
 
 const Page = () => {
   return (
@@ -12,7 +12,7 @@ const Page = () => {
    
       <Second/>
       <BrowseRange/>
-      <Products/>
+    <ProductCard/>
       <HeroSection/>
       <ImageGallery/>
 

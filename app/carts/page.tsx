@@ -8,15 +8,7 @@ import Features from '../shop/banner';
 import Page from '../carts/cartspage';
 import Link from 'next/link';
 
-const Cart = () => {
-  // const cartItems = [
-  //   {
-  //     name: 'Asgaard sofa',
-  //     price: 250000,
-  //     quantity: 1,
-  //     image: img, 
-  //   },
-  // ];
+const Cart = () => {;
 
   const total = Products .reduce((acc, item) => acc + item.price * item.quantity, 0);
 

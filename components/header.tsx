@@ -52,10 +52,8 @@ const Navbar: React.FC = () => {
             </Link>
           </li>
         </ul>
-
-        {/* Icons */}
         <div className="hidden md:flex space-x-10 text-gray-700 text-xl">
-          <Link href="/profile" className="hover:text-yellow-500">
+          <Link href="/contact" className="hover:text-yellow-500">
             <FaRegUser />
           </Link>
           <Link href="/search" className="hover:text-yellow-500">
@@ -64,7 +62,7 @@ const Navbar: React.FC = () => {
           <Link href="/wishlist" className="hover:text-yellow-500">
             <FaRegHeart />
           </Link>
-          <Link href="/cart" className="hover:text-yellow-500">
+          <Link href="/shopcarts" className="hover:text-yellow-500">
             <AiOutlineShoppingCart />
           </Link>
         </div>

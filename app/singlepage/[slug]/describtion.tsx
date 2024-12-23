@@ -48,7 +48,7 @@ const ProductDescription: React.FC = () => {
         {renderContent()}
         <div className="flex flex-col md:flex-row  w-full justify-center items-center space-y-4 md:space-y-0 md:space-x-4 mt-4">
           <Image src={img} alt="Sofa 1" className=" w-full md:w-1/2 lg:w-[45%] rounded" />
-          <Image src={img}alt="Sofa 2" className="w-full md:w-1/2 lg:w-[45%] rounded" />
+          <Image src={img}alt="Sofa 2" className="w-full md:w-1/2 lg:w-[45%]  rounded" />
         </div>
       </div>
       <hr className='my-10'/>

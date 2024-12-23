@@ -3,6 +3,7 @@ import img3 from "@/images/Images (7).png"
 import img9 from "@/images/Images (5).png"
 import img1 from "@/images/Images (4).png"
 
+
 import img5 from "@/images/Images (1).png"
 import img6 from '@/images/Images (8).png'
 import img7 from "@/images/Images (3).png"
@@ -50,6 +51,7 @@ export interface Product {
     colors: ['purple', 'black', 'yellow'],
     imageSrc: img5,
     thumbnails: [img5, img5,img5,img5],
+  
   },
   {
     slug: 'leviosa',
@@ -72,8 +74,8 @@ export interface Product {
     slug: 'lolito',
     name: 'Lolito',
     link: 'singlepage/lolito',
+    description: 'Big sofa',
     price: 7000,
-    description: '',
     rating: 4.5,
     reviews: 5,
     quantity:1,
@@ -93,7 +95,7 @@ export interface Product {
     name: 'Respira',
     link: 'singlepage/respira',
     price: 500,
-    description: '',
+    description: 'Outdoor bar table',
     rating: 4.5,
     reviews: 5,
     quantity:1,
