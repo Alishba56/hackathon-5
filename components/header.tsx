@@ -18,10 +18,12 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <div className="flex items-center">
+            <Link href="/" className="hover:text-yellow-500">
           <span className="text-2xl font-bold text-gray-900 flex items-center">
             <Image src={logo} alt="Logo" className="mr-2" width={40} height={40} />
             Furniro
           </span>
+                </Link>
         </div>
 
         {/* Menu Icon for Mobile */}
