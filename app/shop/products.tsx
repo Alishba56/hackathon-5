@@ -70,7 +70,7 @@ const ProductCard: React.FC<Product> = ({
   imageSrc,
   link,
 }) => (
-  <div className="border rounded-lg w-full sm:w-[20%] md:w-1/3 lg:w-[300px] p-4 shadow-lg">
+  <div className="bg-gray-200 w-full sm:w-1/2 md:w-1/3  p-4 lg:w-[300px] rounded-lg shadow-md overflow-hidden">
     <Link href={link}>
       <div className="relative">
         <Image src={imageSrc} alt={name} className="w-full h-52 object-cover rounded-t-lg" />
