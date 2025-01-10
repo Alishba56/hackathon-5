@@ -1,28 +1,20 @@
 import React from "react";
-
 import Image from "next/image";
-
 import { PiLineVerticalThin } from "react-icons/pi";
-
 import { FaFacebook } from "react-icons/fa";
-
 import { FaLinkedin } from "react-icons/fa6";
-
 import { IoLogoTwitter } from "react-icons/io5";
-
 import Link from "next/link";
-
 import {Product} from '@/data/appproducts'
 
+
 const ProductDetails = ({props}: {props:Product}) => {
-
-
 
   return (
 
     <div className="container mx-auto p-4">
 
-      <div className="flex flex-col lg:flex-row">
+   <div className="flex flex-col lg:flex-row">
 
       
 
