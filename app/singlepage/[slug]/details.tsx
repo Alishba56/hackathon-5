@@ -76,7 +76,7 @@ const ProductDetails = ({ props }: { props: Product }) => {
             {props.sizes.map((size, index) => (
               <button
                 key={index}
-                className={`mt-1 mx-1 sm:w-[6%] w-[10%] py-2 px-3 border ${
+                className={`mt-1 mx-1 sm:w-[8%] w-[13%] py-2 px-3 border ${
                   selectedSize === size
                     ? "border-black bg-[#B88E2F]"
                     : "border-gray-300 bg-[#F9F1E7]"
@@ -87,7 +87,7 @@ const ProductDetails = ({ props }: { props: Product }) => {
               </button>
             ))}
           </div>
-          <div className="mb-4">
+          <div className="mb-4 space-x-2">
             <h1 className=" text-gray-700">Color:</h1>
             <button className="mt-1 w-10 h-10 py-2 px-3 border border-gray-300 bg-purple-900 rounded-full"></button>
             <button className="mt-1 w-10 h-10 py-2 px-3 border border-gray-300 bg-black rounded-full"></button>
