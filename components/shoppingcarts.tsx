@@ -17,8 +17,8 @@ const ShoppingCart = ({toggleBtn}: {toggleBtn: ()=> void}) => {
   };
 
   return (
-    <div className=" bg-[#c8c5c5] h-[100vh] flex  justify-end w-[100vw] left-0 top-0">
-      <div className="h-[550px] bg-white w-[25vw] top-0 p-10">
+    <div className=" z-50 bg-[#c8c5c5] h-[100vh] flex  justify-end w-[100vw] left-0 top-0">
+      <div className="h-[550px] bg-white w-full sm:w-[25vw] top-0 p-10">
         <h2 className="text-xl flex items-center justify-between font-bold mb-4">
           Shopping Cart <TbShoppingBagX onClick={toggleBtn} className="cursor-pointer"/>
         </h2>
