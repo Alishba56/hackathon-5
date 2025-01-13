@@ -1,5 +1,5 @@
 "use client"
-import { TbShoppingCartCancel } from "react-icons/tb";
+import { TbShoppingBagX } from "react-icons/tb";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -17,10 +17,10 @@ const ShoppingCart = ({toggleBtn}: {toggleBtn: ()=> void}) => {
   };
 
   return (
-    <div className="z-50 bg-[#c8c5c5] h-[100vh] flex justify-end w-[100vw] left-0 top-0">
+    <div className=" bg-[#c8c5c5] h-[100vh] flex  justify-end w-[100vw] left-0 top-0">
       <div className="h-[550px] bg-white w-[25vw] top-0 p-10">
         <h2 className="text-xl flex items-center justify-between font-bold mb-4">
-          Shopping Cart <TbShoppingCartCancel onClick={toggleBtn} className="cursor-pointer"/>
+          Shopping Cart <TbShoppingBagX onClick={toggleBtn} className="cursor-pointer"/>
         </h2>
         <div className="divide-y divide-gray-200">
           {cartProducts.map((item, index) => (index  <= 1 &&
@@ -49,7 +49,7 @@ const ShoppingCart = ({toggleBtn}: {toggleBtn: ()=> void}) => {
 
         <div className="flex justify-between mt-32 text-lg font-bold py-4 border-t border-gray-200">
           <span>Subtotal</span>
-          {/* <span>Rs. {cartProducts.reduce((total, item) => total + item.price * item.quantity, 0).toLocaleString()}</span> */}
+          <span>Rs. {cartProducts.reduce((total, item) => total + item.price * item.quantity, 0).toLocaleString()}</span>
         </div>
         <div className="flex gap-4 mt-4">
           <button className="flex-1 bg-gray-200 hover:bg-gray-300 text-sm font-medium py-2 rounded-lg">

@@ -99,7 +99,7 @@ const Header = () => {
             <AiOutlineShoppingCart onClick={toggleBtn}/>
           </Link>
       </div>
-            <div className={`${open} absolute `}>
+            <div className={`${open} fixed z-50 top-0 `}>
                 <ShoppingCart toggleBtn={toggleBtn}/>
             </div>
     </nav>
