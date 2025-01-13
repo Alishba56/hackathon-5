@@ -6,6 +6,7 @@ import img from "@/images/Rectangle 1.png";
 import Lable from './lable';
 import Products from './products';
 import Features from './banner';
+import Link from 'next/link';
 
 const ShopHeader: React.FC = () => {
   return (
@@ -21,9 +22,9 @@ const ShopHeader: React.FC = () => {
       </div>
       <div className="container mx-auto top-32 absolute">
        <h1 className="text-4xl font-bold  text-center mb-4">Shop</h1>
-       <p className="text-gray-600 text-center text-2xl">Home &gt; Shop</p>
+       <p className="text-gray-600 text-center text-2xl"><Link href="/">Home</Link> <span>&gt;</span> Shop</p>
      </div> 
-      <div className="container mx-auto px-4 py-8">
+      <div className="">
         <Lable />
         <Products />
         <Features />

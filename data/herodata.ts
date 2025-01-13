@@ -1,5 +1,6 @@
 import img1 from "@/images/hero1.png"
 import img2 from "@/images/hero2.png"
+import img3 from "@/images/Image-living room.png"
 
 export  const heroData = {
     title: '50+ Beautiful rooms inspiration',
@@ -9,5 +10,6 @@ export  const heroData = {
     images: [
      img1,
      img2,
+     img3
     ],
   };

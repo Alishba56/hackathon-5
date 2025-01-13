@@ -8,7 +8,7 @@ const HeroSection: React.FC = () => {
   return (
     <section className="relative bg-gray-50 py-10">
       {/* Background with Image */}
-      <div className="w-full h-72 md:h-[50%] lg:h-[70vh] overflow-hidden">
+      <div className="w-full h-72  lg:h-[70vh] overflow-hidden">
         <Image
           src={background}
           alt="Room and Furniture"
@@ -19,13 +19,13 @@ const HeroSection: React.FC = () => {
       </div>
 
       {/* Content Card */}
-      <div className="absolute  bottom-10 flex h-[60%] items-center justify-center md:justify-start lg:ml-[50%] p-4 md:p-8 lg:w-[40%] bg-[#FFF3E3] bg-opacity-90 rounded-lg shadow-md">
-        <div className="text-center md:text-left">
+      <div className="absolute bottom-5 lg:bottom-24 flex h-[300px] items-center justify-center lg:justify-start sm:right-24 p-8  bg-[#FFF3E3]  rounded-lg shadow-md">
+        <div className="text-center lg:text-start ">
           <p className="text-sm font-semibold text-black uppercase">New Arrival</p>
           <h1 className="mt-4 text-2xl md:text-4xl font-bold text-yellow-700 leading-tight">
             Discover Our New Collection
           </h1>
-          <p className="mt-4 text-gray-600">
+          <p className="mt-4 text-gray-600 w-full sm:w-[400px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
           </p>
           <Link href='/shop'>

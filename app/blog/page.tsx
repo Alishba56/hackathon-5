@@ -53,8 +53,8 @@ const Blog = () => {
         </div>
       </div>
     <div className="">
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-        <div className="lg:col-span-3 px-40 py-10">
+      <div className="flex flex-col-reverse lg:flex-row gap-8 justify-evenly">
+        <div className="lg:col-span-3  py-10 w-[90%] mx-auto lg:w-[700px]">
           {posts.map((post, index) => (
             <div key={index} className="mb-8">
               <Image src={post.image} alt={post.title} className="w-full h-96 object-cover mb-4" />
@@ -66,15 +66,15 @@ const Blog = () => {
             </div>
           ))}
 
-          <div className="flex items-center justify-center mt-8">
-            <button className="border border-gray-300 p-2 rounded hover:bg-gray-100">1</button>
-            <button className="border border-gray-300 p-2 rounded hover:bg-gray-100">2</button>
-            <button className="border border-gray-300 p-2 rounded hover:bg-gray-100">3</button>
-            <button className="border border-gray-300 p-2 rounded hover:bg-gray-100">Next</button>
-          </div>
+<div className="flex justify-center mt-10">
+      <button className="px-4 py-2 mx-1 bg-[#B88E2F] text-white rounded ">1</button>
+      <button className="px-4 py-2 mx-1 bg-[#F9F1E7] rounded">2</button>
+      <button className="px-4 py-2 mx-1 bg-[#F9F1E7] rounded">3</button>
+      <button className="px-4 py-2 mx-1 bg-[#F9F1E7] rounded">Next</button>
+    </div>
         </div>
 
-        <div className="lg:col-span-1 py-10 ">
+        <div className="lg:col-span-1 py-10 w-[300px]">
             <input type="text" placeholder=" Search" className='border py-2 rounded-1xl px-7'  />
           <h2 className="text-2xl font-semibold mt-10 mb-10">Categories</h2>
           <ul>

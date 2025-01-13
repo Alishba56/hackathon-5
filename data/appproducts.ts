@@ -12,6 +12,7 @@ import img2 from "@/images/Images (6).png"
 import { StaticImageData } from 'next/image'
 
 export interface Product {
+  id: number;
     slug: string;
     name: string;
     price: number;
@@ -34,6 +35,7 @@ export interface Product {
   export const Products = [
    
   {
+    id:1,
     slug: 'syltherine',
     link: 'singlepage/syltherrine',
     name: 'Syltherine',
@@ -50,10 +52,11 @@ export interface Product {
     sizes: ['L', 'XL', 'XS'],
     colors: ['purple', 'black', 'yellow'],
     imageSrc: img5,
-    thumbnails: [img5, img5,img5,img5],
+    thumbnails: [img2, img3,img9,img5],
   
   },
   {
+    id:2,
     slug: 'leviosa',
     name: 'Leviosa',
     link: 'singlepage/leviosa',
@@ -71,6 +74,7 @@ export interface Product {
     thumbnails: [img6, img6,img6,img6],
   },
   {
+    id:3,
     slug: 'lolito',
     name: 'Lolito',
     link: 'singlepage/lolito',
@@ -91,6 +95,7 @@ export interface Product {
   },
   
   {
+    id:4,
     slug: 'respira',
     name: 'Respira',
     link: 'singlepage/respira',
@@ -109,6 +114,7 @@ export interface Product {
     thumbnails: [img8, img8,img8,img8],
   },
   {
+    id:5,
     slug: 'grifo',
     name: 'Grifo',
     link: 'singlepage/grifo',
@@ -126,6 +132,7 @@ export interface Product {
     thumbnails: [img3, img3,img3,img3],
   },
 {
+  id:6,
   slug: 'muggo',
   name: 'Muggo',
   link: 'singlepage/muggo',
@@ -144,6 +151,7 @@ export interface Product {
   thumbnails: [img2, img2,img2,img2],
 },
 {
+  id:7,
   slug: 'pingky',
   name: 'Pingky',
   link: 'singlepage/pingky',
@@ -164,6 +172,7 @@ export interface Product {
 },
 
 {
+  id:8,
   slug: 'potty',
   name: 'Potty',
   link: 'singlepage/potty',
@@ -182,6 +191,7 @@ export interface Product {
  thumbnails: [img9, img9,img9,img9],
 },
 {
+  id:9,
   slug: 'asgaard-sofa',
   name: 'Asgaard sofa',
   price: 250000,

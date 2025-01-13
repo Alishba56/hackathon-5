@@ -34,11 +34,11 @@ const ProductDescription: React.FC = () => {
   return (
     <div className=" mx-auto p-4">
       <div className="">
-        <ul className="flex justify-center space-x-16 mb-14">
+        <ul className="flex flex-wrap justify-center sm:space-x-16  space-x-3 font-bold items-center mb-14">
           {tabs.map((tab) => (
             <li
               key={tab}
-              className={`cursor-pointer text-2xl  ${selectedTab === tab ? 'text-black ' : 'text-gray-400'}`}
+              className={`cursor-pointer sm:text-2xl text-xs  ${selectedTab === tab ? 'text-black ' : 'text-gray-400'}`}
               onClick={() => setSelectedTab(tab)}
             >
               {tab}
@@ -47,8 +47,8 @@ const ProductDescription: React.FC = () => {
         </ul>
         {renderContent()}
         <div className="flex flex-col md:flex-row  w-full justify-center items-center space-y-4 md:space-y-0 md:space-x-4 mt-4">
-          <Image src={img} alt="Sofa 1" className=" w-full md:w-1/2 lg:w-[45%] rounded" />
-          <Image src={img}alt="Sofa 2" className="w-full md:w-1/2 lg:w-[45%]  rounded" />
+          <Image src={img} alt="Sofa 1" className=" w-full md:w-1/2 lg:w-[30%] rounded" />
+          <Image src={img}alt="Sofa 2" className="w-full md:w-1/2 lg:w-[30%]  rounded" />
         </div>
       </div>
       <hr className='my-10'/>
