@@ -79,7 +79,7 @@ const ProductCard: React.FC<Product> = ({
       <div className="hidden group-hover:block  sm:w-1/3 md:w-[300px] lg:w-[300px]  duration-500 z-20 w-full h-full justify-center absolute    ">
               <div className='absolute z-20 w-full h-[91%] top-0  bg-gray-900  opacity-50'></div>
               <div className=' absolute z-30 top-0 w-full h-full'>
-                <Link href='/shopcarts'>
+                <Link href='/carts'>
                 <button className='bg-white text-yellow-700 font-bold py-3 text-2xl  mt-28 md:ml-12 ml-9  px-7'>Add to Carts</button>
 
                 </Link>

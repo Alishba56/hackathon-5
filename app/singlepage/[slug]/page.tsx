@@ -24,9 +24,7 @@ async function page({
         <Link href="/shop"> 
   <h1 className='flex gap-2  text-gray-400 items-center'>Shop <SlArrowRight className='text-black gap-3'/></h1> </Link>
   <h1 className='flex gap-4 font-bold items-center  '>  <PiLineVerticalThin className='text-black  text-4xl'/>  {product.name}</h1>
-  <h1 className='flex gap-4   text-gray-400 items-center'>Home <SlArrowRight className='text-black'/></h1>
-  <h1 className='flex gap-4   text-gray-400 items-center'>Shop <SlArrowRight className='text-black'/></h1>
-  <h1 className='flex gap-4 items-center  '>  <PiLineVerticalThin className='text-black text-4xl'/>  {product.name}</h1>
+
   
       </div>
       <ProductDetails props={product}/>

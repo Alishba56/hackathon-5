@@ -39,7 +39,7 @@ const Header = () => {
         </Link>
         </div>
         <div>
-        <ul className={`${attr} w-[100vw] left-0 top-20 absolute bg-white z-20  text-center space-x-6 space-y-3 text-xl  py-4 font-medium md:hidden}`}>
+        <ul className={`${attr} w-[100vw] md:hidden left-0 top-20 absolute bg-white z-20  text-center space-x-6 space-y-3 text-xl  py-4 font-medium }`}>
         <li>
             <Link href="/" className="hover:text-yellow-500 block py-2 sm:py-0">
               Home
